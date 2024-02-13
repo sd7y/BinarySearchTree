@@ -52,6 +52,12 @@ public class TestTree {
         System.out.println("Expected Result: "+expected);
         tree.printPostorderRecursive();
         System.out.println();
+        System.out.print("Postorder Printing with Iterator: ");
+        Iterator i = tree.postorderIterator();
+        while(i.hasNext()){
+            System.out.print(i.next().toString()+", ");
+        }
+        System.out.println();
     }
     
     public static void main(String[] args){
